@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<title>도방변▶유리▶표준형→일반형</title>
+<link rel="shortcut icon" href="images\favicon.ico" type="image/favicon.ico" /><!--여기까지 파비콘-->
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script><!--파비콘 아래부터 여기까지 Mathjax(수식 입력)-->
+<link rel="stylesheet" type="text/css" href="styleprogram.css">
+<script src="program.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+	<a href="index.html">
+	<div id="logobig"><img src="images\header.png" alt="도형의 방정식 변환기(대)"></div>
+	<div id="logomid"><img src="images\header.png" alt="도형의 방정식 변환기(중)" width="700"></div>
+	<div id="logolit"><img src="images\header.png" alt="도형의 방정식 변환기(소)" width="390"></div>
+	</a>
+</header>
+
+<div id="process">
+<a href="index.html" style="color:#0000ff; text-decoration: underline;">홈</a>
+▶
+<a href="trans4.html" style="color:#0000ff; text-decoration: underline;">유리함수(분수함수)</a>
+▶
+표준형→일반형
+</div>
+
+<section>
+유리함수 표준형(\(y={k \over x-p}+q\))을 일반형(\(y={ax+b \over cx+d}\))으로 변환합니다.<br/>
+y= (분자)<input type="text" id="k" placeholder="k"/>&nbsp;&nbsp;&nbsp;&nbsp;+<input type="text" id="q" placeholder="q"/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(분모)x+<input type="text" id="p" placeholder="(-p)"/><br/>
+<input type="button" onclick="t4p2()" value="변환"><br/>
+<div id="result"></div><br/>
+
+<div id="warning">
+<주의><br/>
+계수가 1인 경우 빈칸에 1을 입력하셔야 합니다.<br/>
+분수함수의 경우 분모와 분자, 정수를 구분하여 입력합니다. 분모 내 분수, 분자 내 분수, 정수 내 분수는 소수로 고쳐서 입력하셔야 합니다.<br/>
+q는 분모가 1입니다.(q가 정수가 아닌 실수일 경우 소수를 고쳐서 입력할 것.)<br/>
+계수 및 상수를 입력하실 때 부호를 잘못 입력하지 않도록 조심하십시오.<br/>
+음수 입력 예시)
+-1<font color="#ffffff">x+</font>-2<font color="#ffffff">y+</font>-3<font color="#ffffff">=0</font><br>
+웹으로 구현된 변환기입니다. 소수의 경우 반올림하여 소수점 열째자리까지 표시하며, 소수점 열한 번째 자리 이상의 계산은 오차가 있을 수 있습니다.<br/>
+</div>
+</section>
+
+</body>
+</html> 

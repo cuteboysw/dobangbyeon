@@ -1,0 +1,102 @@
+﻿/* header, 줄바꿈 문제만 해결하면 될 것 같다!!! */
+body {
+background-color: #303000
+}
+
+#process {
+background-color: #ffffff;
+}
+
+header {
+	background-image: url(images/headerbackground.png);
+	width: 100%;
+}
+
+#logobig {
+	display: block;
+}
+
+#logomid {
+	display: none;
+}
+
+#logolit {
+	display: none;
+}
+
+section {
+background-color: #000000;
+color: #ffffff;
+}
+
+h2 {
+color: #ffff00;
+font-weight: bold;
+font-size: 30px;
+}
+
+/*여기부터 하이퍼링크 관련 설정입니다.*/
+/* unvisited link */
+a:link {
+    color: #00ffff;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #00ffff;
+}
+
+/* mouse over link */
+a:hover {
+    color: #ff00ff;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #ff00ff;
+    text-decoration: none;
+} 
+/*여기까지 하이퍼링크 관련 설정입니다.*/
+
+@media only screen and (max-width: 790px) {
+	header {
+	background-image: url(images/headerbackground.png);
+	width: 100%;
+}
+	
+	#logobig {
+		display: none;
+	}
+
+	#logomid {
+		display: block;
+	}
+
+	#logolit {
+		display: none;
+	}
+	
+}
+
+@media only screen and (max-width: 730px) {
+	header {
+	background-image: url(images/headerbackground.png);
+	width: 100%;
+}
+
+	#logobig {
+		display: none;
+	}
+
+	#logomid {
+		display: none;
+	}
+
+	#logolit {
+		display: block;
+	}
+
+
+}
