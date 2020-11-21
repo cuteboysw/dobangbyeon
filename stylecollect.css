@@ -29,6 +29,7 @@ background-color: #000000;
 color: #ffff00;
 }
 
+/* 필요가 없어서 주석 처리. 추후 삭제 예정.
 #trans1 {
 
 }
@@ -52,6 +53,7 @@ color: #ffff00;
 #trans6 {
 
 }
+*/
 
 /*여기부터 하이퍼링크 관련 설정입니다.*/
 /* unvisited link */
@@ -99,6 +101,27 @@ a:active {
 }
 
 @media only screen and (max-width: 730px) {
+	header {
+	background-image: url(images/headerbackground.png);
+	width: 100%;
+}
+
+	#logobig {
+		display: none;
+	}
+
+	#logomid {
+		display: none;
+	}
+
+	#logolit {
+		display: block;
+	}
+
+
+}
+
+@media only screen and (max-width: 480px) {
 	header {
 	background-image: url(images/headerbackground.png);
 	width: 100%;

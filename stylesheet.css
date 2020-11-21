@@ -108,3 +108,32 @@ hr {
 
 
 }
+
+@media only screen and (max-width: 480px) {
+	header {
+	background-image: url(images/headerbackground.png);
+	width: 100%;
+}
+
+	#logobig {
+		display: none;
+	}
+
+	#logomid {
+		display: none;
+	}
+
+	#logolit {
+		display: block;
+	}
+
+section {
+	width:100%;
+}
+
+hr {
+	display: block;
+}
+
+
+}
