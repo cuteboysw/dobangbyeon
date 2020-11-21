@@ -112,7 +112,7 @@ hr {
 @media only screen and (max-width: 480px) {
 	header {
 	background-image: url(images/headerbackground.png);
-	width: 60%;
+	width: 100%;
 }
 
 	#logobig {
@@ -125,6 +125,7 @@ hr {
 
 	#logolit {
 		display: block;
+		width: 80%;
 	}
 
 section {
